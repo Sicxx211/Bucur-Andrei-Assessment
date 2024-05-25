@@ -1,0 +1,56 @@
+Title:  
+Task Planner - UI/UX - Users are unable to delete tasks that are a multiple of number 3 when deleting from bottom to top
+
+
+Description:
+Users will encounter an error when trying to delete tasks, from bottom to top, that are a multiple of 3 in the list order. (ex: 6, 9, 12)
+
+Steps to Reproduce:
+
+Repro step 1:
+1. Open the Task Planner App.
+2. Navigate to the tasks lists page
+3. Add at least 9 tasks to the list 
+4. Press "Delete" on the tasks 9 or 6 
+
+Repro step 2:
+1. Open the Task Planner App.
+2. Navigate to the tasks lists page
+3. Add at least 3 tasks
+4. Delete them all 
+5. Add another 3 tasks
+6. Press "Delete" button on the third task
+
+Expected Result:
+Users should be able to delete tasks without any error occurring.
+
+Actual Result:
+An error message occurrs when users are trying to delete the tasks that are a multiple of number 3 in the list order, when deleting them from bottom to top.
+
+Error Message:
+"An exception occurred while deleting this task."
+
+Environment:
+- Browser: Opera
+- Version: 109.0.5097.80
+- OS: Windows 10
+- URL: file:///C:/Users/A%20and%20L/Downloads/QA_Task.html
+
+Additional Information:
+- Worth noting that when a user completely deletes the first set of tasks, the issue will also occur on the third task present in the list. 
+
+- Issue will also occur on a second set of tasks, when having only 3 of them available.
+
+- A workaround for the user to completely delete the tasks present in the list is to delete them from top to bottom
+
+
+Attachments:
+https://we.tl/t-vbfxRqWxO3 
+
+---
+
+Recommendation:
+
+The development team should check the functionality and the current conditions applied for the Delete Button and the task list order when deleting from bottom to top, and considering to implement detailed console logs to capture more information when the error occurs.
+
+---
